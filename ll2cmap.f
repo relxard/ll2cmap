@@ -4,8 +4,8 @@ PROGRAM ll2cmap
 ! Program to convert a global {L}atitude-{L}ongitude ARL formatted meteorology 
 !      file {to} an ARL formatted file on a {C}onformal {MAP} projection.
 !-------------------------------------------------------------------------------
-! This computer code is distributed under the GNU LGPL license, 
-!     https://www.gnu.org/licenses/lgpl-3.0.en.html
+! This computer code is distributed under the GNU General Public license, 
+!     https://www.gnu.org/licenses/gpl-3.0.en.html
 ! Copyright: roland.draxler@meteozone.com
 !-------------------------------------------------------------------------------
 ! Compilation requires the conformal mapping conversion library:
