@@ -1,25 +1,21 @@
 PROGRAM ll2cmap 
 
 !-------------------------------------------------------------------------------
-! Program to convert a global {L}atitude-{L}ongitude ARL formatted meteorology 
-!      file {to} an ARL formatted file on a {C}onformal {MAP} projection.
+! Program to convert a global {L}atitude-{L}ongitude HYSPLIT formatted 
+! meteorology file {to} an HYSPLIT formatted file on a {C}onformal {MAP} 
+! projection. This code, LL2CMAP, is distributed under the GNU General Public 
+! license https://www.gnu.org/licenses/gpl-3.0.en.html
 !-------------------------------------------------------------------------------
-! This computer code is distributed under the GNU General Public license, 
-!     https://www.gnu.org/licenses/gpl-3.0.en.html
-! Copyright: roland.draxler@meteozone.com
-!-------------------------------------------------------------------------------
-! Compilation requires the conformal mapping conversion library:
-!      MAP="libcmapf.a"   
-! Available from:
-!      https://www.arl.noaa.gov/wp_arl/wp-content/uploads/utilities/cmap/
-!      cmapf.v1_0.tar.gz
+! Compilation requires the conformal mapping conversion library: MAP="libcmapf.a"   
+! https://www.arl.noaa.gov/wp_arl/wp-content/uploads/utilities/cmap/cmapf.v1_0.tar.gz
 ! OR
-!      https://www.iamg.org/documents/oldftp/VOL23/v23-1-5.tar.Z
+! https://www.iamg.org/documents/oldftp/VOL23/v23-1-5.tar.Z
 !-------------------------------------------------------------------------------
 ! Use the following statements to compile the code with gfortran:
 ! OPT="-ffree-form -fconvert=big-endian -frecord-marker=4"
 ! gfortran -oll2cmap ${OPT} ll2cmap.f ${MAP} 
 !-------------------------------------------------------------------------------
+! Author: roland.draxler@meteozone.com
 ! 12 Dec 2022 - Initial version
 !-------------------------------------------------------------------------------
 
